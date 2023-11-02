@@ -129,20 +129,50 @@ este texto esta en _**negrita y cursiva**_
         <title>En el head se pone todo lo no visible para los visitantes</title>
     </head>
     <body>
-        <table>
-        <tr>
-            <th>Nombre</th>
-            <th>Edad</th>
-        </tr>
-        <tr>
-            <td>Juan</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>María</td>
-            <td>25</td>
-        </tr>
-        </table>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Puesto</th>
+                <th>Atleta</th>
+                <th>Tiempo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1r</td>
+                <td>Alejandro Pérez</td>
+                <td>2:01:15</td>
+            </tr>
+            <tr>
+                <td>2n</td>
+                <td>Torcuato García</td>
+                <td>2:12:10</td>
+            </tr>
+            <tr>
+                <td>3r</td>
+                <td>Wenceslao Durán</td>
+                <td>2:13:59</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Puesto</th>
+                <th>Atleta</th>
+                <th>Tiempo</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
     </body>
 </html>
 ```

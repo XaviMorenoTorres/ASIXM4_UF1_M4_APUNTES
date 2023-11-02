@@ -38,3 +38,27 @@ este texto esta en _**negrita y cursiva**_
 [] Opcion B
 
 [] Opcion C
+
+# HTML
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>En el head se pone todo lo no visible para los visitantes</title>
+    </head>
+    <body>
+        <h1>Apuntes</h1>
+        <p class="">contenido</p>
+        <img href="../imagen1.png">
+        <br>
+        <h4>Etiqueta de bloque</h4>
+        <p>La P, cuando se dejan de utilizar hace un intro</p>
+        <h4>Etiqueta de linea</h4>
+        <p>La a, se pueden poner enlaces, tambien se pondria estilos, imagenes...</p>
+    </body>
+</html>
+```

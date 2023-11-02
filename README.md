@@ -77,7 +77,7 @@ este texto esta en _**negrita y cursiva**_
 
 **style**: Se utiliza para incluir hojas de estilo CSS directamente en el documento HTML.
 
-**script**: Se utiliza para incluir scripts JavaScript en la página web. Puede estar ubicado en la sección <head> o al final del cuerpo (<body>) para mejorar el rendimiento de carga.
+**script**: Se utiliza para incluir scripts JavaScript en la página web. Puede estar ubicado en la sección **head** o al final del cuerpo (**body**) para mejorar el rendimiento de carga.
 
 **body**: Contiene el contenido visible de la página, como texto, imágenes, enlaces y otros elementos.
 
@@ -93,9 +93,9 @@ este texto esta en _**negrita y cursiva**_
 
 **div**: Se utiliza para crear contenedores o divisiones en la página. Es comúnmente usado para aplicar estilos o estructurar el contenido.
 
-**table**: Crea tablas en la página web. Se utiliza junto con etiquetas como <tr> (fila), <th> (encabezado de columna) y <td> (celda de datos) para definir la estructura de la tabla.
+**table**: Crea tablas en la página web. Se utiliza junto con etiquetas como **tr** (fila), **th** (encabezado de columna) y **td**(celda de datos) para definir la estructura de la tabla.
 
-**form**: Define un formulario que permite a los usuarios enviar datos al servidor. Incluye elementos como <input>, <textarea>, <select>, y botones para recopilar información.
+**form**: Define un formulario que permite a los usuarios enviar datos al servidor.
 
 **input**: Se utiliza para crear campos de entrada de texto, casillas de verificación, botones de radio y otros elementos de formulario.
 
@@ -105,13 +105,21 @@ este texto esta en _**negrita y cursiva**_
 # GIT
 
 **git init:** Inicializa un repositorio.
+
 **git add**: Añade cambios al área de preparación.
+
 **git commit**: Guarda los cambios en el repositorio.
+
 **git push**: Sube cambios a un repositorio remoto.
+
 **git pull**: Descarga cambios de un repositorio remoto.
+
 **git branch**: Muestra y crea ramas.
 
+# Tabla
+
 ```html
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

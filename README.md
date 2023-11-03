@@ -126,17 +126,8 @@ este texto esta en _**negrita y cursiva**_
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>En el head se pone todo lo no visible para los visitantes</title>
+        <title>Tablas</title>
     </head>
-    <body>
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas</title>
-</head>
 <body>
     <table border="1">
         <thead>
@@ -173,6 +164,65 @@ este texto esta en _**negrita y cursiva**_
     </table>
 </body>
 </html>
+```
+
+# CSS
+
+## Que es? ##
+
+CSS, que significa "Cascading Style Sheets" (Hojas de Estilo en Cascada), es un lenguaje de programación utilizado para controlar la presentación y el diseño de documentos web, como páginas HTML.
+
+## Estilo en línea:##
+
+Puedes agregar estilos CSS directamente en la etiqueta HTML utilizando el atributo style. Por ejemplo:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>En el head se pone todo lo no visible para los visitantes</title>
+    </head>
+    <body>
+        <p style="color: blue; font-size: 16px;">Este es un párrafo azul.</p>
+    </body>
+</html>
+```
+
+## Bloque de estilo interno: ##
+
+Puedes incluir un bloque de estilo CSS en la sección head de tu documento HTML utilizando la etiqueta style
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            p {
+                color: red;
+                font-size: 18px;
+                }
+        </style>
+    </head>
+    <body>
+    <p>Este es un párrafo rojo.</p>
+    </body>
+</html>
+```
+## Archivo externo de CSS: ##
+
+Puedes crear un archivo CSS por separado con extensión .css y luego enlazarlo con tu página HTML utilizando la etiqueta link en la sección head.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <p>Este es un párrafo con estilos desde un archivo externo.</p>
     </body>
 </html>
 ```

@@ -231,6 +231,54 @@ Puedes crear un archivo CSS por separado con extensión .css y luego enlazarlo c
     </body>
 </html>
 ```
+
+**Unidades relativas**
+
+Al definir dimensiones y márgenes, es preferible utilizar unidades relativas en lugar de unidades absolutas. Las unidades relativas se ajustan automáticamente al tamaño del dispositivo.
+
+```
+div {
+  width: 50%;
+  height: 60vh;
+}
+```
+El **%** es una unidad relativa que se adapta al tamaño del contenedor padre, por lo que si el contenedor padre es más ancho, el elemento también lo será.
+
+El **vh** es útil cuando se desea que un elemento ocupe una parte específica de la altura de la pantalla.
+
+**Media Queries**
+
+
+```
+column-50 {
+    width: 50%;
+  }
+```
+
+```
+@media only screen and (max-width: 700px) {
+  column-50 {
+    width: 100%;
+  }
+}
+```
+Esto lo que hara es que una columna que ocupa el 50% de la pantalla acabe ocupando el 100% cuando pase por el punto de corte que en este caso es 700px.
+
+**Unidades EM y REM**
+
+Otra práctica común es el uso de unidades em y rem para tamaños de fuente y márgenes. Estas unidades son relativas al tamaño del texto base, facilitando la adaptación a diferentes tamaños de pantalla.
+
+```
+body {
+  font-size: 16px; /* Tamaño base del texto */
+}
+
+h1 {
+  font-size: 2em; /* Tamaño del texto es el doble del tamaño base (32px) */
+  margin-bottom: 1rem; /* Margen inferior es igual a 1 vez el tamaño base (16px) */
+}
+```
+
 ## Selectores
 
 * **Selector de elementos:**
@@ -301,48 +349,3 @@ Todo el documento estara de fondo de color rojo
 ```
 
 Afecta a todos los elementos ```HTML``` que tienen un atributo ```id=""``` con el valor especificado.
-
-**Unidades relativas**
-
-Al definir dimensiones y márgenes, es preferible utilizar unidades relativas en lugar de unidades absolutas. Las unidades relativas se ajustan automáticamente al tamaño del dispositivo.
-
-```
-div {
-  width: 50%;
-  height: 60vh;
-}
-```
-El **%** es una unidad relativa que se adapta al tamaño del contenedor padre, por lo que si el contenedor padre es más ancho, el elemento también lo será.
-E **vh** es útil cuando se desea que un elemento ocupe una parte específica de la altura de la pantalla.
-
-**Media Queries**
-
-
-```
-column-50 {
-    width: 50%;
-  }
-```
-
-```
-@media only screen and (max-width: 700px) {
-  column-50 {
-    width: 100%;
-  }
-}
-```
-Esto lo que hara es que una columna que ocupa el 50% de la pantalla acabe ocupando el 100% cuando pase por el punto de corte que en este caso es 700px.
-
-**Unidades EM y REM**
-Otra práctica común es el uso de unidades em y rem para tamaños de fuente y márgenes. Estas unidades son relativas al tamaño del texto base, facilitando la adaptación a diferentes tamaños de pantalla.
-
-```
-body {
-  font-size: 16px; /* Tamaño base del texto */
-}
-
-h1 {
-  font-size: 2em; /* Tamaño del texto es el doble del tamaño base (32px) */
-  margin-bottom: 1rem; /* Margen inferior es igual a 1 vez el tamaño base (16px) */
-}
-```

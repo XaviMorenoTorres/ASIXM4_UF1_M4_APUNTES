@@ -1,6 +1,6 @@
-# ASIXM4_UF1_M4_APUNTES
-
 ## Apuntes de M4
+
+# Markdawn
 
 este texto esta en *cursiva*
 este texto esta en _cursiva_
@@ -81,7 +81,7 @@ este texto esta en _**negrita y cursiva**_
 
 **body**: Contiene el contenido visible de la página, como texto, imágenes, enlaces y otros elementos.
 
-**h1, h>, h3, h4, h5, h6**: Definen encabezados de diferentes niveles, siendo **h1** el más alto y **h6** el más bajo. Estos se utilizan para estructurar el contenido y mejorar la accesibilidad.
+**h1, h2, h3, h4, h5, h6**: Definen encabezados de diferentes niveles, siendo **h1** el más alto y **h6** el más bajo. Estos se utilizan para estructurar el contenido y mejorar la accesibilidad.
 
 **p**: Define un párrafo de texto.
 
@@ -101,34 +101,20 @@ este texto esta en _**negrita y cursiva**_
 
 **select**: Crea listas desplegables de selección en formularios.
 
+Estos son unos de los atributos mas utilizados en html.
 
-# GIT
+```
+witdh=""
+class=""
+type=""
+id=""
+alt=""
+href=""
+```
 
-**git init:** Inicializa un repositorio.
-
-**git add**: Añade cambios al área de preparación.
-
-**git commit**: Guarda los cambios en el repositorio.
-
-**git push**: Sube cambios a un repositorio remoto.
-
-**git pull**: Descarga cambios de un repositorio remoto.
-
-**git branch**: Muestra y crea ramas.
-
-# Tabla
+# Tabla HTML
 
 ```html
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tablas</title>
-    </head>
-<body>
     <table border="1">
         <thead>
             <tr>
@@ -162,15 +148,34 @@ este texto esta en _**negrita y cursiva**_
             </tr>
         </tfoot>
     </table>
-</body>
-</html>
 ```
+
+**Ejemplo de la tabla**
+
+![Ejemplo tabla](https://github.com/XaviMorenoTorres/ASIX_M4_UF1_M4_APUNTES/blob/main/tabla.png)
+
+
+# GIT
+
+**git init:** Inicializa un repositorio.
+
+**git add**: Añade cambios al área de preparación.
+
+**git commit**: Guarda los cambios en el repositorio.
+
+**git push**: Sube cambios a un repositorio remoto.
+
+**git pull**: Descarga cambios de un repositorio remoto.
+
+**git branch**: Muestra y crea ramas.
 
 # CSS
 
 ## Que es? ##
 
 CSS, que significa "Cascading Style Sheets" (Hojas de Estilo en Cascada), es un lenguaje de programación utilizado para controlar la presentación y el diseño de documentos web, como páginas HTML.
+
+![Ejemplo Css](https://github.com/XaviMorenoTorres/ASIX_M4_UF1_M4_APUNTES/blob/main/ejemploCSS.png)
 
 ## Estilo en línea:##
 
@@ -226,3 +231,89 @@ Puedes crear un archivo CSS por separado con extensión .css y luego enlazarlo c
     </body>
 </html>
 ```
+## Selectores
+
+* **Selector de elementos:**
+
+```
+p {
+   color: blue;
+}
+```
+
+Afectara a todos los elementos ```<p>``` del documento ```HTML```.
+
+* **Selecctor de clase:**
+
+```
+.example {
+   propiedad1: value1;
+   propiedad2: value2;
+}
+```
+
+```
+<a class="example">
+<div class="example">
+```
+
+* **Selector de descendientes:**
+
+```
+div strong{
+    color: black;
+}
+```
+
+Un ejemplo para ver las diferencias entre un selector de hijos y de descendientes:
+
+* **Selector de hijos:**
+
+```
+h3>strong {
+    color: blue;
+}
+```
+
+![Selector hijo y descendiente](https://github.com/XaviMorenoTorres/ASIX_M4_UF1_M4_APUNTES/blob/main/selectores.png)
+
+* **Selector universal:**
+
+```
+* {
+    background-color: red;
+}
+```
+
+Todo el documento estara de fondo de color rojo
+
+* **Selector de id:** 
+
+```
+#example {
+   property: value;
+   property2: value2;
+}
+```
+
+```
+<p id="ejemplo1">
+```
+
+Afecta a todos los elementos ```HTML``` que tienen un atributo ```id=""``` con el valor especificado.
+
+**Unidades relativas**
+
+Al definir dimensiones y márgenes, es preferible utilizar unidades relativas en lugar de unidades absolutas. Las unidades relativas se ajustan automáticamente al tamaño del dispositivo.
+
+```
+div {
+  width: 50%;
+  height: 60vh;
+}
+```
+El **%** es una unidad relativa que se adapta al tamaño del contenedor padre, por lo que si el contenedor padre es más ancho, el elemento también lo será.
+E **vh** es útil cuando se desea que un elemento ocupe una parte específica de la altura de la pantalla.
+
+**Media Queries**
+

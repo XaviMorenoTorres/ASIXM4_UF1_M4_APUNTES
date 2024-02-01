@@ -177,7 +177,7 @@ CSS, que significa "Cascading Style Sheets" (Hojas de Estilo en Cascada), es un 
 
 ![Ejemplo Css](https://github.com/XaviMorenoTorres/ASIX_M4_UF1_M4_APUNTES/blob/main/ejemploCSS.png)
 
-## Estilo en línea:##
+## Estilo en línea:
 
 Puedes agregar estilos CSS directamente en la etiqueta HTML utilizando el atributo style. Por ejemplo:
 
@@ -317,3 +317,32 @@ E **vh** es útil cuando se desea que un elemento ocupe una parte específica de
 
 **Media Queries**
 
+
+```
+column-50 {
+    width: 50%;
+  }
+```
+
+```
+@media only screen and (max-width: 700px) {
+  column-50 {
+    width: 100%;
+  }
+}
+```
+Esto lo que hara es que una columna que ocupa el 50% de la pantalla acabe ocupando el 100% cuando pase por el punto de corte que en este caso es 700px.
+
+**Unidades EM y REM**
+Otra práctica común es el uso de unidades em y rem para tamaños de fuente y márgenes. Estas unidades son relativas al tamaño del texto base, facilitando la adaptación a diferentes tamaños de pantalla.
+
+```
+body {
+  font-size: 16px; /* Tamaño base del texto */
+}
+
+h1 {
+  font-size: 2em; /* Tamaño del texto es el doble del tamaño base (32px) */
+  margin-bottom: 1rem; /* Margen inferior es igual a 1 vez el tamaño base (16px) */
+}
+```
